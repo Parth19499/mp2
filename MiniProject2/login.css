@@ -1,0 +1,30 @@
+body {
+	background-image: url("Pink.png");
+}
+h1 {
+	font-weight: bold;
+	color: green;
+	text-align: center;
+	font-family: calibri;
+}
+div {
+	margin-top: 25%;
+	background-image: url("Black.png");
+	background-repeat: repeat-x;
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0 25% 0 25%;
+}
+a {
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+	margin-left: -14%;
+}
+#w {
+	margin-left: -14%;	
+}
+form {
+	color: orange;
+	font-weight: bold;
+}
