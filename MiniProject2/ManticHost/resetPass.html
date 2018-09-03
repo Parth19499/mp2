@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reset Password</title>
+	<link rel="stylesheet" type="text/css" href="css/resetPass.css">
+	<script type="text/javascript">
+		function myFunction() {
+    		var popup = document.getElementById("myPopup");
+    		popup.classList.toggle("show");
+		}
+	</script>
+</head>
+<body>
+	<div align="center">
+	<fieldset>
+		<legend>Enter new password</legend>
+		<form action="PHP/resetPass.php" method="post">
+		    <!--<input type="hidden" name="id" value="<? echo htmlspecialchars($id); ?>" >-->
+			<div class="popup" onclick="myFunction()"><input type="password" name="npass" placeholder="new password" class="np" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,15}" 
+			title="Password must contain one uppercase, one lowercase, one number and its length should be minimum 8 and maximum 15." required>
+			<!--<span class="popuptext" id="myPopup">Password must contain one uppercase, one lowercase, one number and its length should be minimum 8 and maximum 15.</span>-->
+			</div><br>
+			<input type="password" name="ncpass" placeholder="confirm password" class="np" required><br>
+			<input type="submit" value="change password" id="btn">
+		</form>
+	</fieldset>
+	</div>
+</body>
+</html>

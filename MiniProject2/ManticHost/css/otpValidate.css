@@ -1,0 +1,38 @@
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+}
+legend {
+	font-weight: bold;
+	color:green;
+}
+.btn {
+	align-items: center;
+	padding: 0px 25px;
+	display: flex;
+	text-transform: uppercase;
+	border-radius: 25px;
+	background-color: #57b846;
+	color: #fff;
+	font-family: Montserrat-Bold;
+	font-size: 15px;
+	justify-content: center;
+	transition: all 0.4s;
+	margin-left: 25px;
+	height: 35px;
+}
+.btn:hover{
+	background-color: #000;
+}
+.tarea {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 2px solid black;
+	border-radius: 25px;
+	height: 40px;
+	width: 200px;
+	transition: all 0.4s;
+}
+.tarea:focus {
+	border: 2px solid green;
+}
