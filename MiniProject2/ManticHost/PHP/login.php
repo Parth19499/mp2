@@ -20,7 +20,7 @@ $connection = new mysqli('localhost','smarthea_Parth','Parth@19499',$db) or die(
 		print '<script type="text/javascript">';
 		print 'alert("User does not exists, Please Signup")';
 		print '</script>';
-		print '<script type="text/javascript">location.href = "signup.html";</script>';
+		print '<script type="text/javascript">location.href = "../signup.html";</script>';
 	}
 	else{
 	    $mquery="SELECT password from userdetails WHERE email='".$email."'";
@@ -36,11 +36,12 @@ $connection = new mysqli('localhost','smarthea_Parth','Parth@19499',$db) or die(
 			print '<script type="text/javascript">';
 			print 'alert("Invalid Credentials")';
 			print '</script>';
-			print '<script type="text/javascript">location.href = "index.html";</script>';
+			print '<script type="text/javascript">location.href = "../index.html";</script>';
 		}
 		else{
-		    echo "asas";
-			print '<script type="text/javascript">location.href = "../Main/index.html";</script>';
+		    session_start();
+		    $_SESSION["validate_session"]=$email;
+			print '<script type="text/javascript">location.href = "../../Main/index.php";</script>';
 		}
 	}
 // 	function getdbvalue() {

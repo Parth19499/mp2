@@ -20,14 +20,22 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+<!--ProfPic JS-->
+<!--<script type="text/javascript">-->
+<!--    function loadMe(){-->
+<!--        var img=document.getElementById("loadimg");-->
+<!--        img.src="";-->
+<!--    }-->
+<!--</script>-->
+
 </head>
 <body>
 	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/vector.jpg" alt="IMG">
+				<div class="login100-pic js-tilt" data-tilt><!--loaded Images here -->
+					<img src="images/vector.jpg" alt="IMG" id="loadimg">
 				</div>
 
 				<form class="login100-form validate-form" action="PHP/login.php" method="POST">
@@ -36,7 +44,7 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" id="uemail" type="text" name="email" placeholder="Email" autofocus><!-- <div id="hiddenmsg" style="display: none">user already exists!!!</div> -->
+						<input class="input100" id="uemail" type="text" name="email" placeholder="Email" onchange="loadMe()" autofocus><!-- <div id="hiddenmsg" style="display: none">user already exists!!!</div> -->
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>

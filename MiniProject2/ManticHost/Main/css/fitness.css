@@ -1,0 +1,31 @@
+.fitnessDiffSelector {
+	float: left;
+	font-weight: bold;
+	color: brown;
+}
+.fitnessGenderSelector {
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+	color: brown;
+}
+.headerS {
+	color: white;
+}
+.fitnessBodyfocusSelector {
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+	color: brown;
+}
+.fitnessEquipmentSelector {
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+	color: brown;
+	/*clear: right;*/
+}
+.abc{
+	margin-top: 150px;
+	clear: left;
+}
