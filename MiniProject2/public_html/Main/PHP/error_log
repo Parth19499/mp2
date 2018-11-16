@@ -1,0 +1,2 @@
+[27-Sep-2018 05:39:55 Europe/London] PHP Parse error:  syntax error, unexpected '$_SESSION' (T_VARIABLE) in /home/smarthea/public_html/Main/PHP/Logout.php on line 4
+[27-Sep-2018 05:41:58 Europe/London] PHP Parse error:  syntax error, unexpected 'text' (T_STRING), expecting ']' in /home/smarthea/public_html/Main/PHP/Logout.php on line 5
